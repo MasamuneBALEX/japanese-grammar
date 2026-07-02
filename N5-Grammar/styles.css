@@ -1,0 +1,38 @@
+@import '../styles.css';
+
+@media screen and (max-width: 1400px) {}
+
+@media screen and (max-width: 1200px) {
+    .links-block {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .links-block {
+        width: 70%;
+
+        .links__title {
+            font-size: 4vw;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .links-block {
+        width: 80%;
+
+        .links {
+            font-size: 4vw;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .links-block {
+
+        .links {
+            font-size: 5vw;
+        }
+    }
+}

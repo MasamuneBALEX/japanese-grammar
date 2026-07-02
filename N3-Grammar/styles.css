@@ -1,0 +1,110 @@
+@import '../base-style.css';
+@import '../styles.css';
+
+.table {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    width: 60%;
+    min-height: 100%;
+    row-gap: 5px;
+
+    .table__row {
+        display: flex;
+        width: 100%;
+        column-gap: 5px;
+    }
+
+    .table__row:has(.table__descr:hover) .table__grammar {
+        background: var(--primary-color);
+        border: 6px solid whitesmoke;
+        color: var(--primary-white);
+    }
+
+    .table__grammar,
+    .table__descr {
+        display: flex;
+        width: 50%;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        min-height: 75px;
+        font-size: 1.5vw;
+        font-weight: bold;
+        transition: background 0.5s ease;
+        box-sizing: border-box;
+
+        img {
+            width: 100%;
+            background-size: contain;
+        }
+    }
+
+    .table__grammar {
+        background-color: var(--third-color);
+        transition: border 0.2s ease-in-out, color 0.2s ease;
+    }
+
+    .table__descr {
+        color: transparent;
+        background-color: var(--secondary-color);
+        transition: color 0.5s;
+
+        &:hover {
+            color: black;
+        }
+    }
+
+    .table__grammar_difficult {
+        background-color: var(--difficult-bg-color);
+    }
+
+    .table__grammar_warning {
+        background-color: var(--warning-bg-color);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .table {
+        width: 60%;
+
+        .table__grammar,
+        .table__descr {
+            font-size: 2vw;
+        }
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .main-menu {
+        font-size: 5vw;
+    }
+
+    .table {
+        width: 70%;
+
+        .table__grammar,
+        .table__descr {
+            font-size: 2.5vw;
+        }
+    }
+
+    .links-block {
+        .links__title {
+            font-size: 3vw;
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .table {
+        width: 80%;
+    }
+
+    .links-block {
+        .links__title {
+            font-size: 4vw;
+        }
+    }
+}
