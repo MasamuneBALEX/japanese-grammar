@@ -75,13 +75,28 @@
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .main-menu {
+        font-size: 5vw;
+    }
+
+    .table {
+        width: 80%;
+
+        .table__grammar,
+        .table__descr {
+            font-size: 3vw;
+        }
+    }
+}
+
 @media screen and (max-width: 920px) {
     .main-menu {
         font-size: 5vw;
     }
 
     .table {
-        width: 70%;
+        width: 90%;
 
         .table__grammar,
         .table__descr {
@@ -99,12 +114,22 @@
 
 @media screen and (max-width: 768px) {
     .table {
-        width: 80%;
-    }
+        width: 95%;
 
-    .links-block {
-        .links__title {
-            font-size: 4vw;
+        .table__row {
+
+            .table__grammar,
+            .table__descr {
+                font-size: 4vw;
+            }
+        }
+
+        .links-block {
+            width: 80%;
+
+            .links__title {
+                font-size: 4vw;
+            }
         }
     }
 }
