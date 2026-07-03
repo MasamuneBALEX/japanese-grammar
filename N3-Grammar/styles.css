@@ -76,6 +76,10 @@
 }
 
 @media screen and (max-width: 1024px) {
+    .button-up {
+        right: 2.5%;
+    }
+
     .main-menu {
         font-size: 5vw;
     }
