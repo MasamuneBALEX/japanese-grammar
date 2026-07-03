@@ -127,13 +127,13 @@
                 font-size: 4vw;
             }
         }
+    }
 
-        .links-block {
-            width: 80%;
+    .links-block {
+        width: 80%;
 
-            .links__title {
-                font-size: 4vw;
-            }
+        .links__title {
+            font-size: 4vw;
         }
     }
 }
